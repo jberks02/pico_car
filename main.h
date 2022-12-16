@@ -1,5 +1,5 @@
 /*
- * picoCPP for Raspberry Pi Pico
+ * pico_car for Raspberry Pi Pico
  *
  * @version     1.0.0
  * @author      Justin Berkshire
@@ -30,6 +30,13 @@
 #include "hardware/spi.h"
 #include "hardware/adc.h"
 #include "hardware/uart.h"
+
+/*
+ * My Modules
+ */
+
+ #include "./modules/motor.cpp"
+ #include "./modules/directionPad.cpp"
 
 #ifdef __cplusplus
 extern "C"
